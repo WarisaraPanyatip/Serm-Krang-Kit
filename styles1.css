@@ -1,0 +1,558 @@
+@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@100;200;300;400;500;600;700&family=Lexend:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@100;200;300;400;500;600;700&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Lexend:wght@100..900&display=swap");
+
+@import url('https://fonts.googleapis.com/css2?family=Silkscreen:wght@400;700&display=swap');
+:root {
+    /*========== Colors ==========*/
+    --white-color: #fff;
+    --black-color: hsl(210, 12%, 15%);
+    --orange-color: rgb(234, 111, 70);
+    --light-green-color: rgb(1, 216, 156);
+    --egg-color: rgb(210, 212, 146);
+    --primary-st-color: rgb(0, 163, 118);
+    --primary-nd-color: rgb(195, 222, 215);
+    --neutral-blue: #f4fefd;
+    --neutral-egg: rgb(242, 242, 232);
+    /*========== Font and typography ==========*/
+    /*.5rem = 8px | 1rem = 16px ...*/
+    --body-font: "Lexend", sans-serif;
+    --th-h-font: "IBM Plex Sans Thai Looped", sans-serif;
+    --th-nh-font: "Kanit", sans-serif;
+    --logo-font: "Silkscreen", sans-serif;
+    --fontcolor-st: #2a3632;
+    --fontcolor-nd: #545f5b;
+    --fontcolor-rd: #808684;
+    --fontcolor-four: #a9afad;
+    --fontcolor-five: #d5d7d6;
+    --h1-font-size: 2rem;
+    --h2-font-size: 1.25rem;
+    --normal-font-size: 1.125rem;
+    --biggest-font-size: 5rem;
+    --bigger-font-size: 3.5rem;
+    --big-font-size: 2.5rem;
+    --small-font-size: 0.813rem;
+    --smaller-font-size: 0.75rem;
+    --text-line-height: 2rem;
+    --head-weight: 600;
+    --des-weight: 300;
+}
+
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body, input {
+    font-family: var(--body-font);
+}
+
+.mdi--gear {
+    position: absolute;
+    top: 8%;
+    left: 1rem;
+    background-color: var(--neutral-blue);
+    width: 17em;
+    height: 17em;
+    --svg: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='%23000' d='M12 15.5A3.5 3.5 0 0 1 8.5 12A3.5 3.5 0 0 1 12 8.5a3.5 3.5 0 0 1 3.5 3.5a3.5 3.5 0 0 1-3.5 3.5m7.43-2.53c.04-.32.07-.64.07-.97s-.03-.66-.07-1l2.11-1.63c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.31-.61-.22l-2.49 1c-.52-.39-1.06-.73-1.69-.98l-.37-2.65A.506.506 0 0 0 14 2h-4c-.25 0-.46.18-.5.42l-.37 2.65c-.63.25-1.17.59-1.69.98l-2.49-1c-.22-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64L4.57 11c-.04.34-.07.67-.07 1s.03.65.07.97l-2.11 1.66c-.19.15-.25.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1.01c.52.4 1.06.74 1.69.99l.37 2.65c.04.24.25.42.5.42h4c.25 0 .46-.18.5-.42l.37-2.65c.63-.26 1.17-.59 1.69-.99l2.49 1.01c.22.08.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64z'/%3E%3C/svg%3E");
+    -webkit-mask-image: var(--svg);
+    mask-image: var(--svg);
+    -webkit-mask-size: 100% 100%;
+    mask-size: 100% 100%;
+    animation: rotate 10s linear infinite;
+}
+main .g2 {
+    top: 50%;
+    left: 84%;
+    background-color: var(--neutral-blue);
+    animation-direction: rotate reverse;
+}
+@keyframes rotate {
+    100% {
+      transform: rotate(360deg);
+    }
+}
+main {
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(to right, var(--primary-st-color), var(--primary-nd-color));
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.box {
+    position: relative;
+    width: 100%;
+    max-width: 1280px;
+    height: 640px;
+    background-color: rgb(242, 242, 232, 0.9);
+    border-radius: 1.5rem;
+    box-shadow: 0 60px 40px -30px rgb(0, 0, 0, 0.27);
+}
+.inner-box {
+    position: absolute;
+    width: calc(100% - 3.1rem);
+    height: calc(100% - 3.1rem);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.form-wrap {
+    position: absolute;
+    height: 100%;
+    width: 45%;
+    top: 0;
+    left: 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    transition: 0.8s ease-in-out;
+}
+
+
+/* ====== FORM ===== */
+form {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    transition: opacity 0.02s 0.4s;
+}
+form.sign-up-form {
+    opacity: 0;
+    pointer-events: none;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    width: 45px;
+    margin-right: 0.5rem;
+}
+.logo h3 {
+    font-family: var(--logo-font);
+    font-size: 1.rem;
+    font-weight: 400;
+    margin-top: -9px;
+    letter-spacing: -0.5px;
+    color: var(--fontcolor-st);
+}
+.heading h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: var(--fontcolor-st);
+}
+.heading h6 {
+    color: var(--fontcolor-rd);
+    font-weight: 300;
+    font-size: 1rem;
+    display: inline;
+}
+.toggle {
+    color: var(--orange-color);
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    transition: 0.3s;
+}
+.toggle:hover {
+    color: red;
+}
+.input-wrap {
+    position: relative;
+    height: 37px;
+    margin-bottom: 2rem;
+
+}
+.input-field {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid var(--orange-color);
+    padding: 0;
+    font-size: 1rem;
+    font-weight: 300;
+    color: var(--fontcolor-st);
+    transition: 0.4s;
+}
+label {
+    position: absolute;
+    font-weight: 400;
+    font-size: 1.2rem;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--fontcolor-rd);
+    pointer-events: none;
+    transition: 0.4s;
+}
+.input-field.active {
+    border-bottom-color: var(--primary-st-color) ;
+}
+.input-field.active + label {
+    font-size: 1rem;
+    color: var(--primary-st-color);
+    top: -2px;
+}
+.sign-btn {
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    background-color: var(--primary-st-color);
+    border: none;
+    border-radius: 0.9rem;
+    color: var(--white-color);
+    margin-bottom: 2rem;
+    font-size: 1.125rem;
+    transition: 0.3s;
+}
+.sign-btn:hover {
+    background-color: var(--light-green-color);
+}
+.text {
+    color: var(--fontcolor-rd);
+    font-size: 1rem;
+    font-weight: 300;
+}
+.text a {
+    color: var(--orange-color);
+    transition: 0.3s;
+}
+.text a:hover {
+    color: red;
+}
+
+main.sign-up-mode form.sign-in-form {
+  opacity: 0;
+  pointer-events: none;
+}
+
+main.sign-up-mode form.sign-up-form {
+  opacity: 1;
+  pointer-events: all;
+}
+
+
+main.sign-up-mode .form-wrap {
+  left: 55%;
+}
+
+main.sign-up-mode .carousel {
+  left: 0%;
+}
+
+
+.carousel {
+    position: absolute;
+    height: 100%;
+    width: 55%;
+    left: 45%;
+    top: 0;
+    background-color: var(--egg-color);
+    border-radius: 1.25rem;
+    display: grid;
+    grid-template-rows: auto 1fr;
+    padding-bottom: 2rem;
+    overflow: hidden;
+    transition: 0.8s ease-in-out;
+}
+
+.images-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.image {
+  width: 50%;
+  position: relative;
+  left: 25%;
+  top: 3rem;
+  margin-bottom: 4rem;
+  grid-column: 1/2;
+  grid-row: 1/2;
+  opacity: 0;
+  border-radius: 20px;
+  transition: opacity 0.3s, transform 0.5s;
+}
+
+.img-1 {
+  transform: translate(0, 2rem);
+}
+
+.img-2 {
+  transform: scale(0.4, 0.5);
+}
+
+.img-3 {
+  transform: scale(0.3) rotate(-20deg);
+}
+.image.show {
+  opacity: 1;
+  transform: none;
+}
+
+.text-slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: var(--fontcolor-st);
+}
+
+.text-wrap {
+  max-height: 2.2rem;
+  overflow: hidden;
+  margin-bottom: 2.5rem;
+}
+
+.text-group {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  transform: translateY(0);
+  transition: 0.5s;
+}
+
+.text-group h2 {
+    font-weight: 500;
+    line-height: 2.2rem;
+    font-size: 1.6rem;
+}
+
+.bullets {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.bullets span {
+  display: block;
+  width: 1rem;
+  height: 0.5rem;
+  background-color: var(--fontcolor-rd);
+  margin: 0 0.25rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.bullets span.active {
+  width: 1.5rem;
+  background-color: var(--orange-color);
+  border-radius: 1rem;
+}
+
+@media (min-width: 2000px) {
+    .form-wrap {
+        position: absolute;
+        height: 100%;
+        width: 45%;
+        top: 0;
+        left: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        transition: 0.8s ease-in-out;
+    }
+    .box {
+        height: 70vh;
+        border-radius: 2.5rem;
+        max-width: 1900px;
+        overflow: hidden;
+    }
+    form {
+        max-width: 700px;
+        width: 100%;
+    }
+    .text-slider {
+        width: 100%;
+    }
+    .text-group h2 {
+        font-size: 1.1rem;
+    }
+    .logo img {
+        width: 65px;
+        margin-right: 1.4rem;
+    }
+    .logo h3 {
+        font-size: 1.7rem;
+    }
+    .heading h2 {
+        font-size: 2.4rem;
+    }
+    .heading h6 {
+        font-size: 1.15rem;
+    }
+    .toggle {
+        font-size: 1.15rem;
+    }
+    .input-wrap {
+        margin-bottom: 3rem;
+        height: 50px;
+    
+    }
+    .input-field {
+        font-size: 1.3rem;
+    }
+    label {
+        font-size: 1.3rem;
+    }
+    .input-field.active + label {
+        font-size: 0.85rem;
+    }
+    .sign-btn {
+        height: 80px;
+        font-size: 1.5rem;
+    }
+    .text {
+        font-size: 1rem;
+    }
+    .image {
+        width: 70%;
+        left: 15%;
+    }
+    .text-wrap {
+        max-height: 2.25rem;
+    }    
+    .text-group h2 {
+        font-size: 2.1rem;
+    }
+            
+    .mdi--gear {
+        width: 27rem;
+        height: 27rem;
+        top: 2%;
+        left: 29%;
+    }
+    main .g2 {
+        top: 70%;
+        left: 80%;
+    }
+}
+
+@media (max-width: 1300px) {
+    .text-slider {
+        width: 100%;
+    }
+    .text-group h2 {
+        font-size: 1.1rem;
+    }
+    form {
+        padding: 1rem 2rem 1.5rem;
+    }
+    .mdi--gear {
+        width: 20rem;
+        height: 20rem;
+        top: 10%;
+        left: 14%;
+    }
+    main .g2 {
+        top: 65%;
+        left: 70%;
+    }
+}
+
+@media (max-width: 850px) {
+    .box {
+        height: auto;
+        max-width: 700px;
+        overflow: hidden;
+    }
+    .inner-box {
+        position: static;
+        transform: none;
+        width: revert;
+        height: revert;
+        padding: 2rem;
+    }
+    .form-wrap {
+        position: revert;
+        width: 100%;
+        height: auto;
+    }
+    form {
+        max-width: revert;
+        padding: 1.5rem 2.5rem 2rem;
+        transition: transform 0.8s ease-in-out, opacity 0.45s linear;
+    }
+    .heading {
+        margin: 2rem 0;
+    }
+    
+    form.sign-up-form {
+        transform: translateX(100%);
+    }
+    main.sign-up-mode form.sign-in-form {
+        transform: translateX(-100%);
+    }
+    main.sign-up-mode form.sign-up-form {
+        transform: translateX(0%);
+    }
+    .images-wrapper {
+        display: none;
+    }
+    .carousel {
+        position: revert;
+        height: auto;
+        width: 100%;
+        padding: 3rem 2rem;
+        display: flex;
+    }
+    .text-slider {
+        width: 100%;
+    }
+    .mdi--gear {
+        width: 20rem;
+        height: 20rem;
+        top: 5%;
+        left: 50%;
+    }
+    main .g2 {
+        top: 70%;
+        left: -6%;
+    }
+}
+
+@media (max-width: 530px) {
+    main {
+        padding: 1rem;
+    }
+    .inner-box {
+        padding: 1rem;
+    }
+    .carousel {
+        padding: 1.5rem 1.7rem;   
+    }
+    .text-wrap {
+        margin-bottom: 1rem;
+    }
+    .text-group h2 {
+        font-size: 0.9rem;
+    }
+    form {
+        padding: 1rem 2rem 1.5rem;
+    }
+    .mdi--gear {
+        width: 13rem;
+        height: 13rem;
+        top: 3%;
+        left: 40%;
+    }
+    main .g2 {
+        display: none;
+    }
+}
+
+
