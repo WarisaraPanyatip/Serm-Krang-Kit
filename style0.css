@@ -1284,25 +1284,6 @@ hr {
   background-color: var(--light-green-color);
   color: var(--fontcolor-st);
 }
-.sld {
-  padding: 4rem 0;
-  background: linear-gradient(to bottom, var(--primary-st-color), var(--primary-nd-color));
-}
-.img-slider {
-  position: relative;
-  width: 85%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.img-slider .slide {
-margin-bottom: 30px;
-}
-.img-slider .slide img {
-  z-index: 1;
-  width: 100%;
-  border-radius: 20px;
-}
-
 
 /*=============== MEDIA QUERIES ===============*/
 /* For small devices */
@@ -1789,4 +1770,23 @@ margin-bottom: 30px;
   .container {
     height: 500px;
   }
+}
+
+.sld {
+  padding: 4rem 0;
+  background: linear-gradient(to bottom, var(--primary-st-color), var(--primary-nd-color));
+}
+.img-slider {
+  position: relative;
+  width: 85%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.img-slider .slide {
+margin-bottom: 30px;
+}
+.img-slider .slide img {
+  z-index: 1;
+  width: 100%;
+  border-radius: 20px;
 }
