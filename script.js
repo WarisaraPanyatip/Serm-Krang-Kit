@@ -12,6 +12,61 @@ toggleBtn.onclick = function () {
     : 'ri-menu-line'
 }
 
+/* imgslide */
+var slides = document.querySelectorAll('.slide');
+var btns = document.querySelectorAll('.img-btn');
+let currentImg = 1;
+
+var manualNav = function(manual){
+    slides.forEach((slide) => {
+        slide.classList.remove('act');
+
+        btns.forEach((btn) => {
+            btn.classList.remove('act');
+        })
+    });
+
+    slides[manual].classList.add('act');
+    btns[manual].classList.add('act');
+}
+
+btns.forEach((btn, i) => {
+    btn.addEventListener("click", () => {
+        manualNav(i);
+        currentImg = i;
+    });
+});
+
+//for autoplay
+var repeat = function(activeClass){
+    let active = document.getElementsByClassName('act');
+    let i = 0;
+
+    slides[i].classList.add('act');
+    btns[i].classList.add('act');
+
+    var repeater = () => {
+        setTimeout(function(){
+            [...active].forEach((activeImg) => {
+                activeImg.classList.remove('act');
+            });
+
+            slides[i].classList.add('act');
+            btns[i].classList.add('act');
+            i++;
+
+            if(slides.length == i){
+                i = 0;
+            }
+            if(i >= slides.length){
+                return;
+            }
+            repeater();
+        }, 7000);
+    }
+    repeater();
+}
+repeat();
 
 /* ====== Show Detail ======= */
 const showDetail = (openButton, detailContent) => {
