@@ -1817,7 +1817,7 @@ hr {
   width: 100%;
   clip-path: circle(0% at 0 50%);
 }
-.img-slider .slide.act{
+.img-slider .slide.active{
   clip-path: circle(150% at 0 50%);
   transition: 2s;
   transition-property: clip-path;
@@ -1843,7 +1843,7 @@ hr {
   border-radius: 20px;
   cursor: pointer;
 }
-.img-slider .navigate .img-btn.act {
+.img-slider .navigate .img-btn.active {
   width: 30px;
 }
 
