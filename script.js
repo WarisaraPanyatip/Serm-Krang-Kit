@@ -19,15 +19,15 @@ let currentImg = 1;
 
 var manualNav = function(manual){
     slides.forEach((slide) => {
-        slide.classList.remove('act');
+        slide.classList.remove('active');
 
         btns.forEach((btn) => {
-            btn.classList.remove('act');
+            btn.classList.remove('active');
         })
     });
 
-    slides[manual].classList.add('act');
-    btns[manual].classList.add('act');
+    slides[manual].classList.add('active');
+    btns[manual].classList.add('active');
 }
 
 btns.forEach((btn, i) => {
@@ -39,20 +39,20 @@ btns.forEach((btn, i) => {
 
 //for autoplay
 var repeat = function(activeClass){
-    let active = document.getElementsByClassName('act');
+    let active = document.getElementsByClassName('active');
     let i = 0;
 
-    slides[i].classList.add('act');
-    btns[i].classList.add('act');
+    slides[i].classList.add('active');
+    btns[i].classList.add('active');
 
     var repeater = () => {
         setTimeout(function(){
             [...active].forEach((activeImg) => {
-                activeImg.classList.remove('act');
+                activeImg.classList.remove('active');
             });
 
-            slides[i].classList.add('act');
-            btns[i].classList.add('act');
+            slides[i].classList.add('active');
+            btns[i].classList.add('active');
             i++;
 
             if(slides.length == i){
