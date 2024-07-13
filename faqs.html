@@ -8,7 +8,12 @@
     <meta name="MobileOptimized" content="320">
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
     
-    <link rel="icon" href="SSK Logo_Green_noname.png" type="image/png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://www.cyrebro.io/wp-content/themes/cyrebro-wp/library/images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://www.cyrebro.io/wp-content/themes/cyrebro-wp/library/images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://www.cyrebro.io/wp-content/themes/cyrebro-wp/library/images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="https://www.cyrebro.io/wp-content/themes/cyrebro-wp/library/images/favicons/site.webmanifest">
+    <link rel="mask-icon" href="https://www.cyrebro.io/wp-content/themes/cyrebro-wp/library/images/favicons/safari-pinned-tab.svg" color="#03EAC1">
+    <link rel="shortcut icon" href="https://www.cyrebro.io/wp-content/themes/cyrebro-wp/library/images/favicons/favicon.ico">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-config" content="https://www.cyrebro.io/wp-content/themes/cyrebro-wp/library/images/favicons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
@@ -114,6 +119,7 @@
                 <a href="faqs.html">FAQs</a>
                 <a href="contact.html">Contact Us</a>
             </div>   
+            <button class="btnLogin"><a class="btn-nav" href="login.html">Login</a></button> 
             <div class="toggle-nav">
                 <i class="ri-menu-line"></i>
             </div>
@@ -125,6 +131,7 @@
             <li><a href="capa.html">Capabilities</a></li>
             <li><a href="faqs.html">FAQs</a></li>
             <li><a href="contact.html">Contact Us</a></li>
+            <li><button class="btnLogin"><a class="btn-nav" href="login.html">Login</a></button> </li>
         </div>
     </header>
 
@@ -132,68 +139,143 @@
       <section class="page__section  page__section--hero_reveal" data-anchor="">
           <div class="hero_reveal  hero_reveal--height_narrow  hero_reveal--black ">
               <div class="site__inner">
-                  <h1 data-text="FAQs : Cyrebro MDR " class="phd">FAQs : คำถามที่พบบ่อย</h1>
+                  <h1 data-text="FAQs : คำถามที่พบบ่อย " class="phd">FAQs : คำถามที่พบบ่อย</h1>
                   <p class="phd2">
-                      คำถามที่พบบ่อย
+                    สำรวจคำถามที่พบบ่อยที่สุดของ เสริมแกร่งกิจ ได้ที่ด้านล่างนี้
                   </p>
               <!-- /.hero__copy -->
               </div>
               <!-- /.site__inner -->
 
               <div class="hero_reveal__background">
-                  <div class="hero_reveal__background__image">
-                      <img role="presentation" src="bg/bg2.png" alt="">
-                  </div>
-                  <!-- /.hero_reveal__background__image -->
-                  <div class="hero_reveal__background__overlay"></div>
-              </div>
-              <!-- /.hero_reveal__background -->  
-          </div>                
+                <div class="hero_reveal__background__image">
+                    <img role="presentation" src="/bg/bg5.jpg" alt="">
+                </div>
+                <!-- /.hero_reveal__background__image -->
+                <div class="hero_reveal__background__overlay"></div>
+            </div>
+            <!-- /.hero_reveal__background -->          
       </section>
     </div>
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="faq-container">
     <div class="container">
-      <div class="tab">
-        <input type="radio" name="acc" id="acc1" />
-        <label for="acc1">
-          <h2>01</h2>
-          <h3>CYREBRO MDR คืออะไร?</h3>
-        </label>
-        <div class="content"><p>ANSWER 01</p></div>
+      <h1 class="title">คำถามที่พบบ่อย</h1>
+      <h2 class="title">Cyrebro SOC/MDR Services</h2>
+      <div class="faq">
+        <h2 class="faq-question">1. MDR (Managed Detection and Response) คืออะไร?</h2>
+        <div class="faq-toggle">
+          <i class="fa-solid fa-angle-down faq-icon"></i>
+        </div>
+        <div class="faq-answer">Managed Detection and Response (MDR) เป็นบริการที่มีความสามารถในการตรวจจับและตอบสนองต่อภัยคุกคามขั้นสูงเพื่อช่วยปกป้องธุรกิจของคุณจากภัยคุกคามทางไซเบอร์ โดยมีการตรวจสอบภัยคุกคามตลอดเวลา (continuous monitoring) ใช้ระบบที่รวบรวมข้อมูลเกี่ยวกับภัยคุกคามทางไซเบอร์จากแหล่งข่าวทั่วโลก (threat intelligence) และมีการตอบสนองต่อภัยคุกคามแบบเชิงรุกอย่างทันท่วงที (incident response) เพื่อสร้างความมั่นคงและความปลอดภัยทางด้านไซเบอร์ให้กับองค์กรของคุณ</div>
       </div>
-      <div class="tab">
-        <input type="radio" name="acc" id="acc2" />
-        <label for="acc2">
-          <h2>02</h2>
-          <h3>CYREBRO MDR เหมาะกับใคร?</h3>
-        </label>
-        <div class="content"><p>ANSWER 02</p></div>
+      <div class="faq">
+        <h2 class="faq-question">2. Cyrebro MDR แตกต่างจากโซลูชันความปลอดภัยทางไซเบอร์ธรรมดาอย่างไร?</h2>
+        <div class="faq-toggle">
+          <i class="fa-solid fa-angle-down faq-icon"></i>
+        </div>
+        <div class="faq-answer">
+          Cyrebro MDR ก้าวข้ามโซลูชันความปลอดภัยทางไซเบอร์แบบดั้งเดิมโดยการเสนอการตรวจจับภัยคุกคามแบบเรียลไทม์ การตรวจสอบตลอด 24/7 และการตอบสนองเชิงรุกต่อเหตุการณ์ต่าง ๆ ซึ่งต่างจากโซลูชันแบบดั้งเดิมที่เน้นการป้องกันเป็นหลัก ในขณะที่บริการ MDR ของเราจะค้นหาภัยคุกคามอย่างต่อเนื่องและตอบสนองทันทีเพื่อลดความเสี่ยง
+        </div>
       </div>
-      <div class="tab">
-        <input type="radio" name="acc" id="acc3" />
-        <label for="acc3">
-          <h2>03</h2>
-          <h3>CYREBRO MDR แพงไหม?</h3>
-        </label>
-        <div class="content"><p>ANSWER 03</p></div>
+      <div class="faq">
+        <h2 class="faq-question">3. บริการเฉพาะทางของ Cyrebro MDR มีอะไรบ้าง?</h2>
+        <div class="faq-toggle">
+          <i class="fa-solid fa-angle-down faq-icon"></i>
+        </div>
+        <div class="faq-answer">
+          บริการเฉพาะทางของ Cyrebro MDR ประกอบด้วย:<br>
+          • การตรวจสอบและตรวจจับภัยคุกคามอย่างต่อเนื่อง<br>
+          • การตอบสนองต่อเหตุการณ์แบบเรียลไทม์<br>
+          • ข้อมูลและการวิเคราะห์เกี่ยวกับภัยคุกคาม<br>
+          • การสืบสวนเหตุการณ์ด้านความปลอดภัยและการคาดคะเน<br>
+          • รายงานความปลอดภัยและการสนับสนุนการปฏิบัติตามกฎระเบียบ<br>
+          • การประเมินความปลอดภัยเป็นประจำและการแนะนำด้านความปลอดภัย
+        </div>
       </div>
-      <div class="tab">
-        <input type="radio" name="acc" id="acc4" />
-        <label for="acc4">
-          <h2>04</h2>
-          <h3>CYREBRO MDR ดีกว่า Cybersecurity แบบอื่นอย่างไร?</h3>
-        </label>
-        <div class="content"><p>ANSWER 04</p></div>
+      <div class="faq">
+        <h2 class="faq-question">4. ทำไมธุรกิจขนาดเล็กถึงกลางควรใช้บริการ Cyrebro MDR?</h2>
+        <div class="faq-toggle">
+          <i class="fa-solid fa-angle-down faq-icon"></i>
+        </div>
+        <div class="faq-answer">
+          ธุรกิจขนาดเล็กถึงกลางบ่อยครั้งมีข้อจำกัดในเรื่องทรัพยากรและความเชี่ยวชาญในการจัดการภัยคุกคามทางไซเบอร์ที่ซับซ้อน Cyrebro MDR จึงเป็นทางเลือกที่มีความคุ้มค่า ที่ให้การป้องกันระดับองค์กร (enterprise-grade security) ทำให้ธุรกิจของคุณปลอดภัยโดยไม่จำเป็นต้องมีทีมความปลอดภัยที่ใหญ่ในองค์กร
+        </div>
       </div>
-      <div class="tab">
-        <input type="radio" name="acc" id="acc5" />
-        <label for="acc5">
-          <h2>05</h2>
-          <h3>จะเริ่มใช้ CYREBRO MDR ได้อย่างไร?</h3>
-        </label>
-        <div class="content"><p>ANSWER 05</p></div>
+      <div class="faq">
+        <h2 class="faq-question">5. Cyrebro MDR สามารถตอบสนองต่อเหตุการณ์ด้านความปลอดภัยที่เกิดขึ้นได้เร็วแค่ไหน?</h2>
+        <div class="faq-toggle">
+          <i class="fa-solid fa-angle-down faq-icon"></i>
+        </div>
+        <div class="faq-answer">
+          Cyrebro MDR ดำเนินการตลอด 24 ชั่วโมงพร้อมทีมผู้เชี่ยวชาญด้านความปลอดภัยที่พร้อมตอบสนองต่อเหตุการณ์ในเวลาแบบเรียลไทม์ ความสามารถในการตรวจจับและตอบสนองขั้นสูงของเราช่วยระบุและลดความเสี่ยงจากภัยคุกคามได้อย่างรวดเร็ว จึงช่วยลดความเสียหายและช่วงเวลา downtime ได้
+        </div>
+      </div>
+      <div class="faq">
+        <h2 class="faq-question">6. ธุรกิจประเภทใดบ้างที่ได้รับประโยชน์มากที่สุดจากบริการ Cyrebro MDR?</h2>
+        <div class="faq-toggle">
+          <i class="fa-solid fa-angle-down faq-icon"></i>
+        </div>
+        <div class="faq-answer">
+          Cyrebro MDR มีประโยชน์สำหรับธุรกิจหลายประเภท เช่น การเงิน การดูแลสุขภาพ ค้าปลีก และการผลิต รวมถึงทุกธุรกิจที่ต้องการความปลอดภัยทางไซเบอร์สูง เนื่องจากบริการของเราถูกปรับให้เข้ากับความต้องการและข้อกำหนดของแต่ละธุรกิจโดยเฉพาะ
+        </div>
+      </div>
+      <div class="faq">
+        <h2 class="faq-question">7. Cyrebro MDR จะรวมเข้ากับระบบความปลอดภัยที่มีอยู่ของฉันได้อย่างไร?</h2>
+        <div class="faq-toggle">
+          <i class="fa-solid fa-angle-down faq-icon"></i>
+        </div>
+        <div class="faq-answer">
+          Cyrebro MDR ถูกออกแบบให้รวมเข้ากับเครื่องมือและระบบความปลอดภัยที่คุณมีอยู่ได้ง่าย ๆ เราทำงานร่วมกับระบบรักษาความปลอดภัยปัจจุบันของคุณโดยช่วยปรับปรุงและพัฒนาประสิทธิภาพการทำงานของระบบ เพื่อให้การป้องกันของคุณมีความครอบคลุม โดยไม่จำเป็นต้องมีการลงทุนในเทคโนโลยีใหม่เพิ่มหรือมีการเปลี่ยนแปลงที่มากมาย
+        </div>
+      </div>
+      <div class="faq">
+        <h2 class="faq-question">8. Cyrebro MDR ให้รายงานและข้อมูลเชิงลึกประเภทใดบ้าง?</h2>
+        <div class="faq-toggle">
+          <i class="fa-solid fa-angle-down faq-icon"></i>
+        </div>
+        <div class="faq-answer">
+          Cyrebro MDR แสดงรายงานและข้อมูลเชิงลึกที่ละเอียดมากมาย ประกอบด้วย:<br>
+        • การแจ้งเตือนและการแจ้งข่าวสารแบบเรียลไทม์<br>
+        • การสรุปและการวิเคราะห์เหตุการณ์<br>
+        • รายงานข้อมูลภัยคุกคาม<br>
+        • รายงานการปฏิบัติตามกฎระเบียบข้อกำหนดขององค์กร<br>
+      </div>
+      </div>
+      <div class="faq">
+        <h2 class="faq-question">9. มั่นใจได้อย่างไรว่า Cyrebro สามารถปกป้องความเป็นส่วนตัวและความปลอดภัยของข้อมูลของฉันได้?</h2>
+        <div class="faq-toggle">
+          <i class="fa-solid fa-angle-down faq-icon"></i>
+        </div>
+        <div class="faq-answer">
+          Cyrebro ปฏิบัติตามมาตรฐานและโปรโตคอลด้านความเป็นส่วนตัวและความปลอดภัยของข้อมูลอย่างเคร่งครัดเพื่อปกป้องข้อมูลของคุณ บริการของเราปฏิบัติตามมาตรฐานอุตสาหกรรมและข้อกำหนดทางกฎหมาย และเราใช้การเข้ารหัสและการควบคุมการเข้าถึงที่ทันสมัยเพื่อรักษาความปลอดภัยข้อมูลของคุณตลอดเวลา
+        </div>
+      </div>
+      <div class="faq">
+        <h2 class="faq-question">10. ฉันจะเริ่มใช้บริการ Cyrebro MDR ได้อย่างไร?</h2>
+        <div class="faq-toggle">
+          <i class="fa-solid fa-angle-down faq-icon"></i>
+        </div>
+        <div class="faq-answer">
+          สามารถเริ่มต้นใช้งาน Cyrebro MDR ได้ง่ายๆ เพียงติดต่อทีมงานของเราเพื่อขอคำปรึกษาและรับการประเมินความต้องการด้านความปลอดภัยทางไซเบอร์ของคุณได้ฟรี ไม่มีค่าใช้จ่าย เราจะเสนอแนวทางที่เหมาะสมกับคุณและแนะนำคุณตลอดกระบวนการเริ่มใช้งาน เพื่อให้การนำไปใช้เป็นไปอย่างราบรื่นและมีประสิทธิภาพ
+        </div>
       </div>
     </div>
+  </div>
+    <script src="script2.js"></script>
+  </body>
+</html>
+
 
     <footer class="footer-header">
       <div class="ft-row">
@@ -203,20 +285,20 @@
           </div>
           <div class="ft-col">
               <h3>Office <div class="underlineani"><span></span></div></h3>
-              <p>942/47 ถนนพระรามที่ 4</p>
-              <p>แขวงสุริยวงศ์ เขตบางรัก</p>
-              <p>กรุงเทพมหานคร 10500</p>
-              <!-- <p class="email-id">cyrebro@outlook.com</p> -->
-              <h4>06-5256-4744</h4>
+              <p>Phayathai Road</p>
+              <p>Punnawithi, Ratchathewi</p>
+              <p>Bangkok, 25000, Thailand</p>
+              <p class="email-id">cyrebro@outlook.com</p>
+              <h4>+66 - 123456789</h4>
           </div>
           <div class="ft-col">
               <h3>Links <div class="underlineani"><span></span></div></h3>
               <ul class="ft-li">
                   <li><a href="index.html">Home</a></li>
-                  <li><a href="ourcompany.html">Our Company</a></li>
+                  <li><a href="">Our Company</a></li>
                   <li><a href="capa.html">Capabilities</a></li>
-                  <li><a href="faqs.html">FAQs</a></li>
-                  <li><a href="contact.html">Contact us</a></li>
+                  <li><a href="">FAQs</a></li>
+                  <li><a href="">Contact us</a></li>
               </ul>
           </div>
           <div class="ft-col">
@@ -227,18 +309,18 @@
                   <button type="submit"><span class="ph--arrow-right-bold"></span></button>
                   
               </form>
-              <!-- <div class="social-icons">
+              <div class="social-icons">
                   <span class="ic--baseline-facebook"></span>
                   <span class="fa6-brands--square-x-twitter"></span>
                   <span class="pajamas--linkedin"></span>
-              </div> -->
+              </div>
           </div>
       </div>
       <hr>
-      <p class="ft-end">&copy; 2024 SERM KRANG KIT. All rights reserved.</p>
+      <p class="ft-end">&copy; 2020&ndash;2024 SERM KRANG KIT. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="script2.js"></script>
 
   </body>
 </html>
