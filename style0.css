@@ -1807,7 +1807,7 @@ hr {
   transform: translateX(-50%);
 }
 .integra:hover {
-  background-color: var(--neutral-blue);
+  background-color: var(--egg-color);
 }
 .img-slider .slide {
   z-index: 1;
