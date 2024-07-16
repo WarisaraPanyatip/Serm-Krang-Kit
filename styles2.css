@@ -469,7 +469,7 @@ hr {
   border-radius: 15px 0px 0px 15px;
   overflow: hidden;
   display: flex;
-  box-shadow: 15px 15px 50px rgba(8, 31, 17, 0.5);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
 }
 .faq-img img {
   width: 100%;
@@ -480,7 +480,7 @@ hr {
 .faq-box {
   padding: 25px;
   background-color: var(--primary-nd-color);
-  box-shadow: 15px 15px 50px rgba(8, 31, 17, 0.5);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
   border-radius: 15px;
   display: flex;
   flex-direction: column;
@@ -505,7 +505,7 @@ hr {
 .faq-box-question h4 {
   font-weight: 400;
   font-family: var(--th-nh-font);
-  font-size: 25px;
+  font-size: 20px;
   line-height: 31px;
   color: var(--fontcolor-st);
 }
@@ -535,7 +535,7 @@ hr {
 .faq-box-ans p{
   font-weight: 300;
   font-family: var(--th-nh-font);
-  font-size: 18px;
+  font-size: 16px;
   line-height: 20px;
   padding-top: 15px;
   text-indent: 30px;
@@ -574,8 +574,8 @@ hr {
       border-radius: 18.0651px 0px 0px 18.0651px;
   }
   .faq-box-question h4{
-      font-weight: 500;
-      font-size: 19px;
+      font-weight: 400;
+      font-size: 18px;
       line-height: 26px;
   }
   .faq-box{
