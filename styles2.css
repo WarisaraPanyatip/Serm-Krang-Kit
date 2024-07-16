@@ -465,7 +465,7 @@ hr {
 }
 .faq-img {
   width: 100%;
-  border: 15px solid var(--neutral-blue);
+  border: 15px solid var(--primary-nd-color);
   border-radius: 15px 0px 0px 15px;
   overflow: hidden;
   display: flex;
@@ -479,7 +479,7 @@ hr {
 }
 .faq-box {
   padding: 25px;
-  background-color: var(--neutral-blue);
+  background-color: var(--primary-nd-color);
   box-shadow: 15px 15px 50px rgba(8, 31, 17, 0.5);
   border-radius: 15px;
   display: flex;
