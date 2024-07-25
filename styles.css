@@ -510,6 +510,9 @@ hr {
 }
 
 @media screen and (min-width: 768px){
+  .contact-bg {
+    margin-top: 1rem;
+  }
   .contact-bg .text{
       width: 70%;
       margin-left: auto;
@@ -546,6 +549,9 @@ hr {
 
 /* iPhone */
 @media (max-width: 568px) {
+  .contact-bg {
+    margin-top: 1.5rem;
+  }
   header {
       padding: 4px 10px;
   }
