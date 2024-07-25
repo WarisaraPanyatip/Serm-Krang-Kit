@@ -296,8 +296,9 @@ header img {
   column-gap: 0.6rem;
 }
 .send-btn{
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--body-font);
   font-size: 1rem;
+  font-weight: 600;
   text-transform: uppercase;
   color: #fff;
   background: var(--primary-st-color);
@@ -328,6 +329,7 @@ header img {
   text-align: center;
 }
 .footer-header {
+  margin-top: 4rem;
   width: 100%;
   /*position: absolute;*/
   bottom: 0;
