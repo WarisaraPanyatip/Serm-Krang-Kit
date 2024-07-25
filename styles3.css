@@ -561,18 +561,6 @@ form button {
 form button:hover {
   transform: translateX(5px);
 }
-.social-icons span {
-  width: 30px;
-  height: 30px;
-  padding: auto;
-  background: var(--fontcolor-st);
-  margin-right: 15px;
-  cursor: pointer;
-}
-.social-icons span:hover {
-  background-color: var(--neutral-egg);
-  transform: scale(1.2);
-}
 .heroicons--envelope {
   display: inline-block;
   width: 1.9em;
